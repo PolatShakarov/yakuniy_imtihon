@@ -1,0 +1,611 @@
+.hero {
+    background-color: #495567;
+    
+
+    &__bg-container{
+        background-image: url("./../../images/main/Bitmap.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__inner-container {
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrapper {
+
+        max-width: 500px;
+        padding-top: 153px;
+        padding-bottom: 153px;
+        margin-left: 165px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+
+    &__heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-size: 56px;
+        line-height: 56px;
+        /* or 100% */
+        letter-spacing: -2.5px;
+        color: $font-folk;
+    }
+
+    &__text {
+        margin-left: 95px;
+        position: relative;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 230px;
+            height: 13px;
+            background-color: $font-color;
+            position: absolute;
+            top: calc(50% - 8px);
+            right: calc(100% + 57px);
+            
+        }
+
+        &::after{
+            content: "";
+            display: inline-block;
+            max-width: 400px;
+            width: 100%;
+            height: 137px;
+            position: absolute;
+            background-image: url("./../../images/main/strelka.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: calc(50% - 8px);
+            left: calc(100% + 40px);
+            
+        }
+    }
+
+    &__btn {
+        margin-left: 95px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .hero {
+
+		&__heading {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-size: 56px;
+            line-height: 56px;
+            width: 573px;
+            /* or 100% */
+            text-align: center;
+            letter-spacing: -2.5px;
+            margin-left: -100px;
+            color: $font-folk;
+		}
+
+		&__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            margin-left: -100px;
+            /* or 167% */
+            width: 573px;
+            text-align: center;
+            color: $font-folk;
+
+            &::before{
+                display: none;
+            }
+
+            &::after{
+                content: "";
+                display: inline-block;
+                max-width: 400px;
+                width: 100%;
+                height: 137px;
+                position: absolute;
+                background-image: url("./../../images/main/strelka.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: calc(50% - -117px);
+                left: calc(100% + -743px);
+                
+            }
+		}
+
+}
+
+
+
+}
+
+.process {
+    margin-top: 200px;
+
+    &__container{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 180px;
+        padding-right: 1px;
+    }
+
+    &__heading{
+        font-family: monospace;
+        font-family: 'Space Mono', 'Arial', 'sans-serif';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color:  #83888F;
+        margin-bottom: 80px;
+        margin-top: 130px;
+        margin-left: -77px;
+    }
+
+    &__list{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 64px;
+        margin-left: -77px;
+    }
+
+    &__item{
+        width: 380px;
+
+    }
+
+    &__icon-line{
+        display: flex;
+        align-items: center;
+        margin-bottom: 61px;
+        margin-left: 0;
+
+        & > .process__circle{
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid $font-color;
+            background-image: url("./../../images/main/app.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $font-color;
+    
+        &:nth-child(2) > .process__circle{
+            background-image: url("./../../images/main/skuter.svg");
+        }
+        }
+    }
+
+    &__icon-two{
+        display: flex;
+        align-items: center;
+        margin-bottom: 61px;
+        margin-left: 0;
+
+        & > .process__circle{
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid $font-color;
+            background-image: url("./../../images/main/skuter.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $font-color;
+    
+        }
+    }
+
+    &__linetwo{
+        display: inline-block;
+        width: 212px;
+        height: 15px;
+        margin-left: -119px;
+        margin-top: 38px;
+        background-color: #E5ECF4;
+    }
+
+    &__icon-free{
+        display: flex;
+        align-items: center;
+        margin-bottom: 61px;
+        margin-left: 0;
+
+        & > .process__circle{
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid $font-color;
+            background-image: url("./../../images/main/CombinedShape.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $font-color;
+    
+        }
+    }
+
+    
+
+    &__line{
+        display: inline-block;
+        width: 350px;
+        height: 15px;
+        background-color:#E5ECF4;
+        // flex-grow: 1;
+    }
+
+  
+
+    
+
+    &__inner-heading{
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+        margin: 0;
+        margin-bottom: 42px;
+        font-family: monospace;
+        font-family: 'Space Mono', 'Arial', 'sans-serif';
+        max-width: 335px;
+    }
+
+    &__text{
+        max-width: 344px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+
+
+        color: #939CAA;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .process {
+
+		&__container {
+            
+            
+		}
+
+		&__list {
+            flex-direction: column;
+		}
+
+		&__icon-line {
+            
+		}
+
+		&__linetwo {
+            display: inline-block;
+            width: 15px;
+            height: 403px;
+            background-color: #E5ECF4;
+            margin-left: 41px;
+            margin-bottom: -278px;
+            margin-top: -293px;
+		}
+
+		&__item {
+            display: flex;
+		}
+
+		&__subject {
+            flex-direction: column;
+            margin-left: 218px;
+            
+		}
+
+		&__line {
+            display: inline-block;
+            width: 15px;
+            height: 94px;
+            background-color: #E5ECF4;
+            margin-left: -55px;
+            margin-bottom: -318px;
+            margin-top: -127px;
+		}
+
+		&__inner-heading {
+            font-family: 'Space Mono';
+            font-style: normal;
+            width: 398px;
+            font-size: 24px;
+            line-height: 28px;
+            /* identical to box height, or 117% */
+            letter-spacing: -1.07143px;
+            color: #495567;
+            text-align: left;
+            
+		}
+
+		&__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            width: 398px;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 167% */
+
+
+            color: #939CAA;
+            
+		}
+
+		&__icon-two {
+		}
+
+		&__icon-free {
+		}
+}
+}
+
+
+
+
+
+/**/
+
+.signscoot {
+    width: 100%;
+    max-width: 1440px;
+    height: 300px;
+    margin-top: 10px;
+    background-image: url("./../../images/footer/belover.png");
+    background-repeat: no-repeat;
+            
+    
+    &__applications{
+        margin-right: 165px;
+    }
+    
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    &__subject {
+        font-family: 'Space Mono';
+        font-style: normal;
+        width: 415px;
+        height: 96px;
+        font-size: 48px;
+        line-height: 48px;
+        /* or 100% */
+        letter-spacing: -2.14286px;
+        margin-top: -14px;
+        margin-left: 165px;
+        color: #FFFFFF;
+    }
+
+    &__link {
+        margin-left: 33px;
+    }
+
+    &__img {
+    }
+}
+
+@media only screen and (max-width:768px){
+    .signscoot {
+
+		&__container {
+            flex-direction: column;
+		}
+
+		&__subject {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            /* or 100% */
+            width: 457px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+            margin-left: 111px;
+            color: #FFFFFF;
+		}
+
+		&__applications {
+            margin-left: 120px;
+		}
+
+		&__link {
+		}
+
+		&__img {
+            
+		}
+}
+.container {
+}
+
+}
+
+.telemetry {
+    margin-left: 173px;
+    margin-right: -170px;
+    margin-top: 147px;
+    
+    
+
+    
+
+	&__container {
+        background-image: url("./../../images/main/shadowmask.png");
+        background-repeat: no-repeat;
+        background-position: calc(1148px - 17px) -2px;
+        
+        
+        margin-bottom: 110px;
+	}
+
+	&__inner-wrapper {
+        display: flex;
+        margin-bottom: 110px;
+        background-image: url("./../../images/main/chapstrelka.svg");
+        background-repeat: no-repeat;
+        background-position: calc(468px + 10px) 294px;
+        
+        
+	}
+
+	&__setting {
+        margin-right: 170px; 
+	}
+
+	&__subject {
+        font-family: 'Space Mono';
+        font-style: normal;
+        width: 445px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        /* or 100% */
+        letter-spacing: -2.14286px;
+        color: #495567;
+	}
+
+	&__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        width: 445px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+        margin-bottom: 40px;
+        color: #939CAA;
+        
+		}
+
+	&__img {
+
+        z-index: -1;
+        
+
+
+		}
+
+    &__link{
+        @include link;
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $font-color;
+            color: $font-color;
+    }
+        }
+}
+
+@media only screen and (max-width:768){
+    .telemetry {
+        
+
+		&__container {
+            flex-direction: column;
+		}
+
+		&__inner-wrapper {
+            flex-direction: column;
+		}
+
+}
+
+.city {
+
+		&__container {
+            flex-direction: column;
+		}
+
+		&__inner-wrapper {
+            flex-direction: column;
+		}
+
+		
+}
+
+}
+
+
+.city {
+    
+
+    &__container {
+        margin-right: 357px;
+        margin-bottom: 110px;
+        background-image: url("./../../images/main/strelkanew.svg");
+        background-repeat: no-repeat;
+        background-position: calc(-136px + 10px) 0px;
+        
+        
+    }
+
+    &__inner-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        
+        
+
+    }
+
+    &__setting {
+        margin-left: 170px; 
+    }
+
+    &__subject {
+        font-family: 'Space Mono';
+        font-style: normal;
+        width: 445px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        /* or 100% */
+        letter-spacing: -2.14286px;
+        color: #495567;
+    }
+
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        width: 445px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+        margin-bottom: 40px;
+        color: #939CAA;
+    }
+
+    &__img {
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+

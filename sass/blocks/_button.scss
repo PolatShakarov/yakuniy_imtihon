@@ -1,0 +1,27 @@
+.hero__link {
+    @include button;
+
+}
+
+.hero__link:hover {
+    background-color: transparent;
+    border: 1px solid #FCB72B;
+    color: #FCB72B;
+}
+
+.hero__link:active{
+    background-color: rgba(226, 236, 236, 0.685);
+    
+}
+
+.hero__btn{
+    @include button;
+
+    &:hover{
+        background-color: transparent;
+        border: 1px solid #FCB72B;
+        color: #FCB72B;
+    }
+
+    
+}

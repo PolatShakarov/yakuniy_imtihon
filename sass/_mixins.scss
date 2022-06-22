@@ -1,0 +1,29 @@
+@mixin flex-starter {
+    display: flex;
+
+}
+
+@mixin list-global {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin button {
+    font-family: monospace;
+    font-family:  'Space Mono', 'Arial', 'sans-serif';
+    margin-left: -353px;
+    margin-right: 210px;
+    padding: 16px 39px;
+    background-color:#FCB72B;
+    color: #FFFFFF;
+}
+
+@mixin link{
+    font-family: monospace;
+        font-family:  'Space Mono', 'Arial', 'sans-serif';
+        padding: 16px 39px;
+        background-color:#FCB72B;
+        color: #FFFFFF;
+}
+

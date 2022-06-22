@@ -1,0 +1,56 @@
+
+.footer {
+        max-width: 1440px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:  #2C343E;
+        
+
+		&__container {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            margin-left: 58px;
+		}
+
+		&__img {
+		}
+
+		&__list-2 {
+            display: flex;
+            margin-left: -320px;
+		}
+
+		&__item-mobile {
+            padding: 20px;
+		}
+
+		&__nav {
+            padding-right: 815px;
+            margin-left: -1px;
+		}
+
+		&__list {
+            display: flex;
+            margin-left: 30px;
+		}
+
+		&__item {
+            padding: 33px;
+		}
+
+		&__nav-link {
+            font-family: monospace;
+            font-family: 'Space Mono', 'Arial', 'sans-serif';
+            display: inline-block;
+            color: #83888F;
+            font-size: 12px;
+            line-height: 15px;
+		}
+}
+
+.instagram__img {
+    padding: 2px;
+}
+
